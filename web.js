@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 var number = 5;
 
 app.get('/', function(request, response) {
-  response.send(number);
+  response.send("String");
 });
 
 var port = process.env.PORT || 5000;
