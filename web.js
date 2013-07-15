@@ -2,9 +2,10 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 var number = 5;
+var string = "Hello again woooorld";
 
 app.get('/', function(request, response) {
-  response.send("String");
+  response.send(string);
 });
 
 var port = process.env.PORT || 5000;
